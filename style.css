@@ -115,9 +115,65 @@ aside {
 footer {
     grid-area: footer;
 }
+nav {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(54, 54, 54, 0.333), rgba(92, 92, 92, 0.333));
+    box-shadow: 0px 0px 20px #333;
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 15px;
+}
+.network {
+    height: 80%;
+    width: 250px;
+}
+.navigation_site {
+    height: 80%;
+    width: 500px;
+}
+.network img:hover {
+    animation: dingleling 0.15s 0s 2;
+    transform: scale(1.1);
+}
+.navigation_site a {
+    transition: all 0.15s;
+    padding: 8px;
+}
+.navigation_site a:hover {
+    transform: scale(1.1);
+    color: #f55;
+    background: rgba(75, 75, 75, 0.2);
+    border-radius: 20px;
+}
+
+@keyframes dingleling {
+    0%{
+        transform: rotateZ(0deg)
+    }
+    25%{
+        transform: rotateZ(10deg)
+    }
+    50%{
+        transform: rotateZ(0deg)
+    }
+    75%{
+        transform: rotateZ(-10deg)
+    }
+    100%{
+        transform: rotateZ(0deg)
+    }
+}
 
 .center {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+.aroundcenter {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
