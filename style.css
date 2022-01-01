@@ -14,7 +14,7 @@ body {
     align-items: center;
 }
 
-.main__block {
+.main_block {
     position: relative;
     width: 96%;
     min-height: 92%;
@@ -22,6 +22,14 @@ body {
     background: linear-gradient(60deg , black , rgb(25, 25, 25), black);
     background-size: 300%;
     animation: horizontal_scroll 40s linear infinite;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr 4fr 1fr;
+    grid-template-areas: 'header header'
+        'section1 aside'
+        'section2 aside'
+        'footer footer';
 }
 
 .rgb::before , .rgb::after {
@@ -50,4 +58,31 @@ body {
     100%{
         background-position: 300% 0;
     }
+}
+/* les background ne son la que pour mieux visualiser les areas, à retirer*/
+header {
+    background: #aaa;
+    grid-area: header;
+    justify-self: center;
+    align-self: center;
+}
+
+.introduction {
+    background: #911;
+    grid-area: section1;
+}
+
+.competancecards {
+    background: #119;
+    grid-area: section2;
+}
+
+aside {
+    background: #191;
+    grid-area: aside;
+}
+
+footer {
+    background: #555;
+    grid-area: footer;
 }
