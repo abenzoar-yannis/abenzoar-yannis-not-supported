@@ -9,4 +9,34 @@ body {
     height: 100vh;
     width: 100%;
     background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__block {
+    position: relative;
+    width: 96%;
+    min-height: 92%;
+    border-radius: 25px;
+    background: linear-gradient(60deg , black , rgb(25, 25, 25), black);
+    background-size: 300%;
+}
+
+.rgb::before , .rgb::after {
+    content: '';
+    position: absolute;
+    left: -3px;
+    top: -2px;
+    z-index: -1;
+    border-radius: 26px;
+    background: linear-gradient(45deg , #f00, #f50, #fa0, #ff0, #af0, #5f0, #0f0, #0f5, #0fa, #0ff, #0af, #05f, #00f, #50f, #a0f, #f0f, #f0a, #f05, #f00, #f50, #fa0, #ff0);
+    background-size: 300%;
+    width: calc(100% + 6px);
+    height: calc(100% + 4px);
+}
+
+.rgb::after {
+    filter: blur(2em);
+    opacity: 0.8;
 }
