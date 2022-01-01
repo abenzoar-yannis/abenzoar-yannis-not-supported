@@ -1,4 +1,6 @@
 ### Hi there 👋
+Bienvenue! Ce repositories a pour but de créer mon premier site personnel. Je suis toujours en cours d'apprentissage, donc cela pourrait prendre du temps avant que je ne sois satisfait par le résultat.
+Ce site existera pour m'entrainer, mais également pour me présenter, et vous partager mon évolution durant mon apprentissage. N'hésitez pas à me donner des conseils en tout genre, je ne suis encore qu'un bébé, et je ne désir qu'apprendre et grandir en tant que nouveau développeur!
 
 <!--
 **abenzoar-yannis/abenzoar-yannis** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
