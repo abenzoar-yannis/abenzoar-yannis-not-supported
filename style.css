@@ -21,6 +21,7 @@ body {
     border-radius: 25px;
     background: linear-gradient(60deg , black , rgb(25, 25, 25), black);
     background-size: 300%;
+    animation: horizontal_scroll 40s linear infinite;
 }
 
 .rgb::before , .rgb::after {
@@ -34,9 +35,19 @@ body {
     background-size: 300%;
     width: calc(100% + 6px);
     height: calc(100% + 4px);
+    animation: horizontal_scroll 30s linear infinite;
 }
 
 .rgb::after {
     filter: blur(2em);
     opacity: 0.8;
+}
+
+@keyframes horizontal_scroll {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 300% 0;
+    }
 }
