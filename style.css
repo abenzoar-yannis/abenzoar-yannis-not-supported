@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     color: #eee;
+
+    text-decoration: none;
+    list-style-type: none;
+    font: normal normal normal 16px/1.3em Times;
 }
 
 body {
@@ -25,7 +29,7 @@ body {
 
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 2fr 4fr 1fr;
+    grid-template-rows: 1fr 3fr 4fr 1fr;
     grid-template-areas: 'header header'
         'section1 aside'
         'section2 aside'
@@ -59,30 +63,61 @@ body {
         background-position: 300% 0;
     }
 }
-/* les background ne son la que pour mieux visualiser les areas, à retirer*/
+
 header {
-    background: #aaa;
     grid-area: header;
     justify-self: center;
     align-self: center;
 }
+header h1 {
+    font: normal bold 3em/1.2em Times;
+    color: #fca;
+}
 
 .introduction {
-    background: #911;
     grid-area: section1;
+}
+.introduction div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+    width: 80%;
+}
+.introduction p {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+.introduction ul {
+    display: flex;
+    justify-content: space-between;
+}
+.introduction li {
+    max-width: 22%;
+    text-align: center;
+    background: #111;
+    box-shadow: 0px 0px 10px grey;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .competancecards {
-    background: #119;
     grid-area: section2;
 }
 
 aside {
-    background: #191;
     grid-area: aside;
 }
 
 footer {
-    background: #555;
     grid-area: footer;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
