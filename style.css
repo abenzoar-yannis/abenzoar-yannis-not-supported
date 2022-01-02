@@ -45,9 +45,10 @@ body {
     border-radius: 26px;
     background: linear-gradient(45deg , #f00, #f50, #fa0, #ff0, #af0, #5f0, #0f0, #0f5, #0fa, #0ff, #0af, #05f, #00f, #50f, #a0f, #f0f, #f0a, #f05, #f00, #f50, #fa0, #ff0);
     background-size: 300%;
+    background-position: 210% 0;
     width: calc(100% + 6px);
     height: calc(100% + 4px);
-    animation: horizontal_scroll 30s linear infinite;
+    /*animation: horizontal_scroll 30s linear infinite;*/
 }
 
 .rgb::after {
@@ -55,6 +56,7 @@ body {
     opacity: 0.8;
 }
 
+/* retait de l'animation pour préserver les performances.
 @keyframes horizontal_scroll {
     0%{
         background-position: 0 0;
@@ -63,6 +65,7 @@ body {
         background-position: 300% 0;
     }
 }
+*/
 
 header {
     grid-area: header;
@@ -104,7 +107,7 @@ header h1 {
     align-items: center;
 }
 
-.competancecards {
+.skills_cards {
     grid-area: section2;
 }
 
