@@ -218,8 +218,6 @@ svg.js circle:nth-child(2) {
 
 aside {
     grid-area: aside;
-    display: flex;
-    justify-content: flex-end;
 }
 .profil {
     position: relative;
@@ -227,13 +225,19 @@ aside {
     right: 5%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     text-align: justify;
-    background: linear-gradient(20deg , #511, #000);
-    height: 150px;
-    width: 150px;
-    border-radius: 15px;
+    background: linear-gradient(20deg , #311, #111);
+    height: 420px;
+    width: 340px;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #866;
     overflow: hidden;
     transition: all 0.7s;
+    
+
+
 }
 
 .profil__top {
