@@ -1,0 +1,99 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+    width: 175px;
+    border-radius: 15px;
+    margin: 15px;
+    background: linear-gradient(#111, #222);
+    transition: transform 0.15s;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card__name {
+    font: normal bold 2em Times;
+}
+
+.card__circle {
+    position: relative;
+}
+svg {
+    height: 110px;
+    width: 110px;
+}
+svg circle {
+    fill: none;
+    stroke-width: 7%;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 310;
+    stroke-dashoffset: 310;
+}
+svg circle:nth-child(1) {
+    stroke: #222;
+    stroke-dashoffset: 0;
+}
+.card__circle__pourcentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: normal bold 1.5em Times;
+}
+
+.card p {
+    font-size: 0.85em;
+}
+
+.html {
+    color: #f00;
+    text-shadow: 1px 1px 3px #c88;   
+}
+.card.html {
+    box-shadow: 0px 0px 12px #c88;   
+}
+.html circle {
+    stroke: #f00;    
+}
+svg.html circle:nth-child(2) {
+    animation: circle__html 3s forwards;
+}
+@keyframes circle__html {
+    to  {stroke-dashoffset: 77.5;}
+}
+
+.css {
+    color: #00f;
+    text-shadow: 1px 1px 3px #66a;
+}
+.card.css {  
+    box-shadow: 0px 0px 12px #66a;
+}
+.css circle {
+    stroke: #00f;
+}
+svg.css circle:nth-child(2) {
+    animation: circle__css 3s forwards;
+}
+@keyframes circle__css {
+    to  {stroke-dashoffset: 124;}
+}
+
+.js {
+    color: #0f0;
+    text-shadow: 1px 1px 3px #8c8;   
+}
+.card.js {
+    box-shadow: 0px 0px 12px #8c8;   
+}
+.js circle {
+    stroke: #0f0;    
+}
+svg.js circle:nth-child(2) {
+    animation: circle__js 3s forwards;
+}
+@keyframes circle__js {
+    to  {stroke-dashoffset: 279;}
+}
