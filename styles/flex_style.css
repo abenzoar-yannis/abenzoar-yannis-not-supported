@@ -1,0 +1,16 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aroundcenter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.columnaround {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}

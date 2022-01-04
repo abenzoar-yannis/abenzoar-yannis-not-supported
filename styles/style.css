@@ -231,7 +231,7 @@ svg.js circle:nth-child(2) {
 
 .content__right {
     height: 100%;
-    min-width: 300px;
+    min-width: 350px;
     max-width: 35%;
 }
 
@@ -329,19 +329,3 @@ footer > nav > .navigation a:hover {
     100%{transform: rotateZ(0deg)}
 }
 
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.aroundcenter {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.columnaround {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
