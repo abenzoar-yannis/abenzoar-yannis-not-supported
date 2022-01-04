@@ -27,7 +27,7 @@ main {
     /*animation: horizontal_scroll 40s linear infinite;*/
 }
 
-.rgb::before , .rgb::after {
+main::before , main::after {
     content: '';
     position: absolute;
     left: -3px;
@@ -42,7 +42,7 @@ main {
     /*animation: horizontal_scroll 30s linear infinite;*/
 }
 
-.rgb::after {
+main::after {
     filter: blur(2em);
     opacity: 0.8;
 }
@@ -67,13 +67,13 @@ header {
     min-height: 8vh;
     width: 100%;
 }
-header h1 {
-    font: normal bold 2.5em/1.2em Times;
+header > h1 {
+    font: normal bold 2.5em/1.4em Times;
     text-align: center;
     color: #fca;
 }
 
-.content__main {
+.content {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -82,30 +82,30 @@ header h1 {
     width: 100%;
 }
 
-.content__main__left {
+.content__left {
     min-height: 450px;
     min-width: 500px;
     max-width: 65%;
 }
 
-.introduction {
+.content__left__introduction {
     max-height: 40%;
     min-width: 500px;
 }
-.introduction div {
+.content__left__introduction > div {
     height: 90%;
     width: 90%;
 }
-.introduction p {
+.content__left__introduction > div > p {
     text-align: justify;
     margin-bottom: 0.5em;
 }
-.introduction ul {
+.content__left__introduction > div > ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.introduction ul li {
+.content__left__introduction > div > ul li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +120,7 @@ header h1 {
     font-size: 0.85rem;
 }
 
-.skills_cards {
+.content__left__skills {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -229,11 +229,12 @@ svg.js circle:nth-child(2) {
     to  {stroke-dashoffset: 279;}
 }
 
-.content__main__right {
+.content__right {
     height: 100%;
     min-width: 300px;
     max-width: 35%;
 }
+
 .profil {
     height: 420px;
     width: 340px;
@@ -245,7 +246,6 @@ svg.js circle:nth-child(2) {
     background: linear-gradient(20deg , #311, #111);
     text-align: justify;
 }
-
 .profil__top {
     display: flex;
     flex-flow: row-reverse nowrap;
@@ -281,7 +281,7 @@ footer {
     min-height: 8vh;
     width: 100%;
 }
-nav {
+footer > nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -293,27 +293,28 @@ nav {
     box-shadow: 0px 0px 20px #333;
     background: linear-gradient(90deg, rgba(54, 54, 54, 0.333), rgba(92, 92, 92, 0.333));
 }
-.network {
+footer > nav > .network {
     height: 100%;
     width: 250px;
 }
-.navigation_site {
-    height: 80%;
-    width: 500px;
-}
-.network img {
+footer > nav > .network img {
     height: 30px;
     margin-top: 5px;
 }
-.network img:hover {
+footer > nav > .network img:hover {
     animation: dingleling 0.15s 0s 2;
     transform: scale(1.1);
 }
-.navigation a {
+footer > nav > .navigation {
+    height: 80%;
+    max-width: 500px;
+}
+footer > nav > .navigation a {
     padding: 8px;
     transition: all 0.15s;
+    text-align: center;
 }
-.navigation a:hover {
+footer > nav > .navigation a:hover {
     background: rgba(0, 0, 0, 0.2);
     transform: scale(1.1);
     border-radius: 20px;
