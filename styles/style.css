@@ -43,6 +43,10 @@ main::after {
     filter: blur(2em);
     opacity: 0.8;
 }
+main > div {
+    min-height: 90vh;
+    width: 100%;
+}
 /* retait de l'animation pour préserver les performances.
 @keyframes horizontal_scroll {
     0%{
@@ -53,8 +57,3 @@ main::after {
     }
 }
 */
-
-main > div {
-    min-height: 90vh;
-    width: 100%;
-}

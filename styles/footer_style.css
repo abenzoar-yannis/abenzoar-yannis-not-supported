@@ -14,25 +14,31 @@ footer > nav > .network {
     height: 100%;
     width: 250px;
 }
-footer > nav > .network img {
+footer > nav > .network > a {
+    display: inline-block;
+    transition: all 0.15s;
+}
+footer > nav > .network > a:hover {
+    transform: scale(1.2);
+}
+footer > nav > .network > a > img {
     height: 30px;
     margin-top: 5px;
 }
-footer > nav > .network img:hover {
+footer > nav > .network > a > img:hover {
     animation: dingleling 0.15s 0s 2;
-    transform: scale(1.1);
 }
 footer > nav > .navigation {
     height: 80%;
     max-width: 500px;
 }
-footer > nav > .navigation a {
+footer > nav > .navigation > a {
     padding: 2px 4px;
     margin: 2px 5px;
     transition: all 0.15s;
     text-align: center;
 }
-footer > nav > .navigation a:hover {
+footer > nav > .navigation > a:hover {
     background: rgba(0, 0, 0, 0.2);
     transform: scale(1.1);
     border-radius: 20px;
