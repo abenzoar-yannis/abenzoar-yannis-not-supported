@@ -1,16 +1,23 @@
-.center {
+.flexcenter {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.aroundcenter {
+.flexaroundcenter {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.columnaround {
+.flexcolumnaround {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.flexevenly {
+    display: flex;
+    justify-content: space-evenly;
 }
