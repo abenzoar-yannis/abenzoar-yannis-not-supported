@@ -21,6 +21,7 @@ main {
     min-height: 92vh;
     max-height: max-content;
     border-radius: 25px;
+    margin-bottom: 30px;
     background: linear-gradient(60deg , black , rgb(25, 25, 25), black);
     background-size: 300%;
     /*animation: horizontal_scroll 40s linear infinite;*/

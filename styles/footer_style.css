@@ -1,6 +1,7 @@
 footer {
     min-height: 8vh;
     width: 100%;
+    margin-bottom: 8px;
 }
 footer > nav {
     height: 90%;
