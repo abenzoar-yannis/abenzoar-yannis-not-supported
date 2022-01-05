@@ -8,7 +8,6 @@
     list-style-type: none;
     font: normal normal normal 18px/1.3em Times;
 }
-
 body {
     min-height: 100vh;
     width: 100%;
@@ -26,7 +25,6 @@ main {
     background-size: 300%;
     /*animation: horizontal_scroll 40s linear infinite;*/
 }
-
 main::before , main::after {
     content: '';
     position: absolute;
@@ -41,12 +39,10 @@ main::before , main::after {
     height: calc(100% + 4px);
     /*animation: horizontal_scroll 30s linear infinite;*/
 }
-
 main::after {
     filter: blur(2em);
     opacity: 0.8;
 }
-
 /* retait de l'animation pour préserver les performances.
 @keyframes horizontal_scroll {
     0%{
