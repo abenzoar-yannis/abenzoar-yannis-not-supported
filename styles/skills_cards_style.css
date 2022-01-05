@@ -42,58 +42,6 @@
     font-size: 0.85em;
 }
 
-.html {
-    color: #f00;
-    text-shadow: 1px 1px 3px #c88;   
-}
-.card.html {
-    box-shadow: 0px 0px 12px #c88;   
-}
-.html circle {
-    stroke: #f00;    
-}
-svg.html circle:nth-child(2) {
-    animation: circle__html 3s forwards;
-}
-@keyframes circle__html {
-    to  {stroke-dashoffset: 77.5;}
-}
-
-.css {
-    color: #00f;
-    text-shadow: 1px 1px 3px #66a;
-}
-.card.css {  
-    box-shadow: 0px 0px 12px #66a;
-}
-.css circle {
-    stroke: #00f;
-}
-svg.css circle:nth-child(2) {
-    animation: circle__css 3s forwards;
-}
-@keyframes circle__css {
-    to  {stroke-dashoffset: 124;}
-}
-
-.js {
-    color: #0f0;
-    text-shadow: 1px 1px 3px #8c8;   
-}
-.card.js {
-    box-shadow: 0px 0px 12px #8c8;   
-}
-.js circle {
-    stroke: #0f0;    
-}
-svg.js circle:nth-child(2) {
-    animation: circle__js 3s forwards;
-}
-@keyframes circle__js {
-    to  {stroke-dashoffset: 279;}
-}
-
-
 /* HTML5 */
 div.red {
     box-shadow: 0px 0px 12px #c88;
@@ -114,4 +62,46 @@ div.red > div > svg > circle:nth-child(2) {
 div.red > div > span {
     color: #f00;
     text-shadow: 1px 1px 3px #c88;     
+}
+/* CSS3 */
+div.blue {
+    box-shadow: 0px 0px 12px #66a;
+}
+div.blue > h3 {
+    color: #00f;
+    text-shadow: 1px 1px 3px #66a; 
+}
+div.blue > div > svg > circle {
+    stroke: #00f;
+}
+div.blue > div > svg > circle:nth-child(2) {
+    animation: circle__blue 3s forwards;
+}
+@keyframes circle__blue {
+    to  {stroke-dashoffset: 124;}
+}
+div.blue > div > span {
+    color: #00f;
+    text-shadow: 1px 1px 3px #66a;     
+}
+/* JavaScript */
+div.green {
+    box-shadow: 0px 0px 12px #8c8;
+}
+div.green > h3 {
+    color: #0f0;
+    text-shadow: 1px 1px 3px #8c8; 
+}
+div.green > div > svg > circle {
+    stroke: #0f0;
+}
+div.green > div > svg > circle:nth-child(2) {
+    animation: circle__green 3s forwards;
+}
+@keyframes circle__green {
+    to  {stroke-dashoffset: 279;}
+}
+div.green > div > span {
+    color: #0f0;
+    text-shadow: 1px 1px 3px #8c8;     
 }
