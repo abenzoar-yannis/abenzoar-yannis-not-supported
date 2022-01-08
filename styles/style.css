@@ -24,7 +24,7 @@ main {
     margin-bottom: 30px;
     background: linear-gradient(60deg , black , rgb(25, 25, 25), black);
     background-size: 300%;
-    /*animation: horizontal_scroll 40s linear infinite;*/
+    /* animation: horizontal_scroll 40s linear infinite; */
 }
 main::before , main::after {
     content: '';
@@ -38,7 +38,7 @@ main::before , main::after {
     background-position: 210% 0;
     width: calc(100% + 6px);
     height: calc(100% + 4px);
-    /*animation: horizontal_scroll 30s linear infinite;*/
+    /* animation: horizontal_scroll 30s linear infinite; */
 }
 main::after {
     filter: blur(2em);
@@ -56,5 +56,5 @@ main > div {
     100%{
         background-position: 300% 0;
     }
-}
-*/
+} */
+

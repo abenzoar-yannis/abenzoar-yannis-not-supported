@@ -30,8 +30,12 @@
     height: 50px;
 }
 .profil__bottom__lien a {
+    height: 2em;
+
     transition: all 0.15s;
     padding: 5px;
+    border: solid 2px #533;
+    border-radius: 1em;
 }
 .profil__bottom__lien a:hover {
     background: rgba(0, 0, 0, 0.2);
