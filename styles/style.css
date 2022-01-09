@@ -74,7 +74,7 @@ main > div {
   width: 100%;
 }
 
-/* possible retait de l'animation pour préserver les performances. */
+/* possible retait de l'animation pour préserver les performances. 
 @keyframes horizontal_scroll {
   0% {
     background-position: 0 0;
@@ -83,3 +83,4 @@ main > div {
     background-position: 300% 0;
   }
 }
+*/

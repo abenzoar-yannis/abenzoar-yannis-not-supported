@@ -13,12 +13,12 @@ header > h1 {
 }
 .content__left {
   min-height: 450px;
-  min-width: 500px;
+  min-width: 340px;
   max-width: 65%;
 }
 .content__left__introduction {
   max-height: 40%;
-  min-width: 500px;
+  min-width: 340px;
 }
 .content__left__introduction > div {
   height: 90%;
@@ -41,10 +41,10 @@ header > h1 {
 }
 .content__left__skills {
   max-height: 50%;
-  min-width: 500px;
+  min-width: 340px;
 }
 .content__right {
   height: 100%;
-  min-width: 350px;
+  min-width: 340px;
   max-width: 35%;
 }
