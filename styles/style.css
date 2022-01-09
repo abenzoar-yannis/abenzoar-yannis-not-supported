@@ -1,60 +1,85 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #eee;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #eee;
 
-    text-decoration: none;
-    list-style-type: none;
-    font: normal normal normal 18px/1.3em Times;
+  text-decoration: none;
+  list-style-type: none;
+  font: normal normal normal 18px/1.3em Times;
 }
 body {
-    min-height: 100vh;
-    width: 100%;
-    background: #000;
+  min-height: 100vh;
+  width: 100%;
+  background: #000;
 }
 
 main {
-    position: relative;
-    top: 1em;
-    width: 96%;
-    min-height: 92vh;
-    max-height: max-content;
-    border-radius: 25px;
-    margin-bottom: 30px;
-    background: linear-gradient(60deg , black , rgb(25, 25, 25), black);
-    background-size: 300%;
-    /* animation: horizontal_scroll 40s linear infinite; */
+  position: relative;
+  top: 1rem;
+  width: 96%;
+  min-height: 92vh;
+  max-height: max-content;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  background: linear-gradient(60deg, black, rgb(25, 25, 25), black);
+  background-size: 300%;
+  animation: horizontal_scroll 40s linear infinite;
 }
-main::before , main::after {
-    content: '';
-    position: absolute;
-    left: -3px;
-    top: -2px;
-    z-index: -1;
-    border-radius: 26px;
-    background: linear-gradient(45deg , #f00, #f50, #fa0, #ff0, #af0, #5f0, #0f0, #0f5, #0fa, #0ff, #0af, #05f, #00f, #50f, #a0f, #f0f, #f0a, #f05, #f00, #f50, #fa0, #ff0);
-    background-size: 300%;
-    background-position: 210% 0;
-    width: calc(100% + 6px);
-    height: calc(100% + 4px);
-    /* animation: horizontal_scroll 30s linear infinite; */
+main::before,
+main::after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  top: -2px;
+  z-index: -1;
+  border-radius: 26px;
+  background: linear-gradient(
+    45deg,
+    #f00,
+    #f50,
+    #fa0,
+    #ff0,
+    #af0,
+    #5f0,
+    #0f0,
+    #0f5,
+    #0fa,
+    #0ff,
+    #0af,
+    #05f,
+    #00f,
+    #50f,
+    #a0f,
+    #f0f,
+    #f0a,
+    #f05,
+    #f00,
+    #f50,
+    #fa0,
+    #ff0
+  );
+  background-size: 300%;
+  background-position: 210% 0;
+  width: calc(100% + 6px);
+  height: calc(100% + 4px);
+  animation: horizontal_scroll 30s linear infinite;
 }
 main::after {
-    filter: blur(2em);
-    opacity: 0.8;
+  filter: blur(2em);
+  opacity: 0.8;
 }
 main > div {
-    min-height: 90vh;
-    width: 100%;
+  min-height: 90vh;
+  width: 100%;
 }
-/* retait de l'animation pour préserver les performances.
-@keyframes horizontal_scroll {
-    0%{
-        background-position: 0 0;
-    }
-    100%{
-        background-position: 300% 0;
-    }
-} */
 
+/* possible retait de l'animation pour préserver les performances. */
+@keyframes horizontal_scroll {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 300% 0;
+  }
+}
