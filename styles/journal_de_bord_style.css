@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: normal normal 1rem/1.3rem Times, serif;
+  color: #ddd;
+  text-decoration: none;
+  list-style-type: none;
+}
+body {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: #000;
+}
