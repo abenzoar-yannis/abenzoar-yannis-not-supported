@@ -17,11 +17,18 @@ body {
 /*----------------------- Nav Bar --------------------------*/
 .navBar {
   position: fixed;
-  height: 3rem;
+  min-height: 3rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
   background: #111;
+}
+
+/*---------- Nav Bar Top Menu ----------*/
+.navBar__topMenu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 /*---------- Nav Bar Side Menu ----------*/
