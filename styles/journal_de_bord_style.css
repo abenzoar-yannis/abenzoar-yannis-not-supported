@@ -13,3 +13,28 @@ body {
   width: 100%;
   background: #000;
 }
+
+/*----------------------- Nav Bar --------------------------*/
+.navBar {
+  position: fixed;
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #111;
+}
+
+/*---------- Nav Bar Side Menu ----------*/
+.menuTranslate {
+  transform: translateX(-20rem);
+}
+.navBar__sideMenu {
+  position: fixed;
+  left: -20rem;
+  height: 100vh;
+  width: 20rem;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+  /* overflow-y: scroll; */
+}
