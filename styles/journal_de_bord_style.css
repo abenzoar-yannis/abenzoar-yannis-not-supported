@@ -24,3 +24,26 @@ body {
   align-items: center;
   background: #111;
 }
+
+.navBar > div {
+  position: relative;
+  width: 8rem;
+  display: flex;
+  align-items: center;
+}
+.navBar__menuCenter {
+  justify-content: center;
+  text-align: center;
+}
+.navBar__menuRight {
+  justify-content: flex-end;
+}
+.navBar ul {
+  position: absolute;
+  top: 5rem;
+}
+
+[class^="navBar__menu"] > i {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
