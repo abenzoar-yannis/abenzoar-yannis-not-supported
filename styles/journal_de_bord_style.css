@@ -21,17 +21,13 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: #111;
 }
 /* Button header and networks */
-.networks {
-  position: absolute;
-  top: 0;
-  background: #111;
-}
 .navBarButton {
-  padding: 0.4rem;
-  border-radius: 1.5rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 1rem;
   margin: 0.5rem;
   margin-right: 0.8rem;
   color: #ccc;
@@ -65,8 +61,20 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.navBar_sideNetworks {
+.navBar__centerMenu {
   position: relative;
+  width: 10rem;
+  text-align: center;
+}
+.navBar__centerMenu {
+}
+.navBar__centerMenu ul {
+  position: absolute;
+  top: -7rem;
+  padding: 0.2rem 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background: #111;
 }
 /*---------- Nav Bar Side Menu ----------*/
 .menuTranslate {
@@ -81,4 +89,15 @@ body {
   transition: 0.5s;
   z-index: 2;
   /* overflow-y: scroll; */
+}
+
+/* Side Networks */
+.navBar_sideNetworks {
+  position: relative;
+}
+.networks {
+  position: absolute;
+  top: 0;
+  right: -3.5rem;
+  background: #111;
 }
