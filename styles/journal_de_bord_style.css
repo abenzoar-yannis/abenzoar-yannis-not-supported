@@ -44,6 +44,19 @@ body {
 }
 
 [class^="navBar__menu"] > i {
-  padding: 0.5rem;
+  padding: 0.4rem 0.5rem;
   margin: 0.5rem;
+  border-radius: 1.5rem;
+  color: #ccc;
+}
+[class*="buttonSlide"]:hover {
+  background: #333;
+  box-shadow: 0 0 0.2rem #aaa;
+  cursor: pointer;
+  color: #ddd;
+}
+[class*="buttonSlide"]:active {
+  background: #a33;
+  box-shadow: 0 0 0.5rem #faa;
+  color: #fff;
 }
