@@ -86,7 +86,7 @@ body {
 }
 /* boite central */
 .navBar__menuCenter ul {
-  top: -200px;
+  top: -10rem;
   min-width: 250px;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
@@ -135,11 +135,11 @@ body {
   transform: translateX(310px);
 }
 .translateLeft {
-  transform: translateX(4rem);
+  transform: translateX(-4rem);
 }
 .translateDown {
-  transform: translateY(200px);
+  transform: translateY(13rem);
 }
 .reverse {
-  transform: rotateZ(180deg);
+  transform: rotate(180deg);
 }
