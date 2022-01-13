@@ -86,8 +86,24 @@ body {
 }
 /* boite central */
 .navBar__menuCenter ul {
+  top: -200px;
   min-width: 250px;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  overflow: hidden;
   transition: 0.3s;
+}
+.navBar__menuCenter li {
+  padding: 0.5rem 0.1rem;
+}
+.navBar__menuCenter li:hover {
+  background: #333;
+  cursor: pointer;
+}
+.navBar__menuCenter li:active {
+  background: #a33;
+  text-shadow: 0 0 0.3rem #ccc;
+  font-weight: bold;
 }
 /* boite droite */
 .navBar__menuRight ul {
@@ -95,7 +111,7 @@ body {
   min-width: 2rem;
   text-align: center;
   font-size: 2rem;
-  border-bottom-left-radius: 1rem;
+  border-bottom-left-radius: 0.5rem;
   transition: 0.3s;
 }
 .navBar__menuRight > ul i {
