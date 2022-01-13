@@ -129,3 +129,17 @@ body {
   color: #a33;
   text-shadow: 0 0 0.3rem #f99;
 }
+
+/* List des class pour mes fonction Javascript, menu amovible */
+.translateRight {
+  transform: translateX(310px);
+}
+.translateLeft {
+  transform: translateX(4rem);
+}
+.translateDown {
+  transform: translateY(200px);
+}
+.reverse {
+  transform: rotateZ(180deg);
+}
