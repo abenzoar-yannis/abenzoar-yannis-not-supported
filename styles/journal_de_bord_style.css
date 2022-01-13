@@ -143,3 +143,15 @@ body {
 .reverse {
   transform: rotate(180deg);
 }
+
+/*______________ Main Container ______________*/
+
+main {
+  position: relative;
+  top: 4rem;
+  z-index: -1;
+  min-height: calc(100vh - 4rem);
+  width: 100%;
+  padding: 1rem;
+  background: #555;
+}
