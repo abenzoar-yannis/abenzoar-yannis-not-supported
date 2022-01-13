@@ -93,14 +93,14 @@ body {
   overflow: hidden;
   transition: 0.3s;
 }
-.navBar__menuCenter li {
+.tabs {
   padding: 0.5rem 0.1rem;
 }
-.navBar__menuCenter li:hover {
+.tabs:hover {
   background: #333;
   cursor: pointer;
 }
-.navBar__menuCenter li:active {
+.tabs:active {
   background: #a33;
   text-shadow: 0 0 0.3rem #ccc;
   font-weight: bold;
