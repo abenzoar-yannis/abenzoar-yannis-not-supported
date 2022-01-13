@@ -148,10 +148,64 @@ body {
 
 main {
   position: relative;
-  top: 4rem;
+  top: 3rem;
   z-index: -1;
   min-height: calc(100vh - 4rem);
   width: 100%;
-  padding: 1rem;
-  background: #555;
+}
+header {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  background: linear-gradient(
+    25deg,
+    #111,
+    #211,
+    #311,
+    #411,
+    #511,
+    #500,
+    #400,
+    #300,
+    #200,
+    #100,
+    #000
+  );
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-shadow: 0.1rem 0.1rem 0.1rem #a66;
+}
+section {
+  min-height: 70vh;
+  margin-top: 1rem;
+  border-top: solid 1px #500;
+  box-shadow: inset 0 1px 5px #c88;
+}
+/* Design des ARTICLES */
+article {
+  padding: 1rem 0.5rem 2.5rem 1rem;
+  border-bottom: solid 1px #500;
+  box-shadow: 0 1px 5px #c88;
+}
+article > h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+article > .date {
+  text-decoration: underline;
+}
+article > p {
+  font: normal 1rem/1.3rem Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 1rem;
+}
+article a {
+  color: #c88;
+}
+article a:hover {
+  text-decoration: underline;
 }
