@@ -66,9 +66,23 @@ body {
 }
 /* boite gauche */
 .navBar__menuLeft ul {
+  left: -310px;
   min-width: 250px;
+  max-width: 300px;
   min-height: 100vh;
+  padding-top: 3rem;
   transition: 0.3s;
+}
+.navBar__menuLeft li {
+  padding: 0 0.6rem;
+  margin-top: 0.5rem;
+}
+.navBar__menuLeft li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.navBar__menuLeft li:active {
+  color: #a33;
 }
 /* boite central */
 .navBar__menuCenter ul {
@@ -93,6 +107,7 @@ body {
 }
 .navBar__menuRight > ul i:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 .navBar__menuRight > ul i:active {
   color: #a33;
