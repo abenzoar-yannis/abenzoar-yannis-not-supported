@@ -217,7 +217,13 @@ article a:hover {
 }
 
 @media all and (min-width: 780px) {
+  .navBar__menuRight > ul {
+    right: 0px;
+  }
 }
 
 @media all and (min-width: 1200px) {
+  .navBar__menuLeft > ul {
+    left: 0px;
+  }
 }
