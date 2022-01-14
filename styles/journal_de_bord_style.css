@@ -17,6 +17,7 @@ body {
 /*----------------------- Nav Bar --------------------------*/
 .navBar {
   position: fixed;
+  z-index: 10;
   min-height: 3rem;
   width: 100%;
   display: flex;
@@ -60,6 +61,7 @@ body {
 /* Style des différente boite "menu" */
 .navBar ul {
   position: absolute;
+  z-index: 1;
   top: 3rem;
   border-top: solid 2px #a33;
   background: #111;
@@ -70,7 +72,8 @@ body {
   width: 350px;
   min-height: 100vh;
   padding-top: 3rem;
-  transition: 0.3s;
+  box-shadow: 0 0px 0.2rem #733;
+  transition: linear 0.3s;
 }
 .navBar__menuLeft li {
   padding: 0 0.6rem;
@@ -90,7 +93,8 @@ body {
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   overflow: hidden;
-  transition: 0.3s;
+  box-shadow: 0 0px 0.2rem #733;
+  transition: linear 0.3s;
 }
 .tabs {
   padding: 0.5rem 0.1rem;
@@ -111,13 +115,13 @@ body {
   text-align: center;
   font-size: 2rem;
   border-bottom-left-radius: 0.5rem;
-  transition: 0.3s;
+  box-shadow: 0 0px 0.2rem #733;
+  transition: linear 0.3s;
 }
 .navBar__menuRight > ul i {
   font-size: 2rem;
   padding: 0.5rem;
   border-radius: 1.7rem;
-  margin-top: 0.3rem;
   transition: 0.2s;
 }
 .navBar__menuRight > ul i:hover {
