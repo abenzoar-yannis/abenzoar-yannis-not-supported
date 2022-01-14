@@ -6,17 +6,38 @@ const menuLeft = document.querySelector(".navBar__menuLeft > ul");
 const menuCenter = document.querySelector(".navBar__menuCenter > ul");
 const menuRight = document.querySelector(".navBar__menuRight > ul");
 
-// Commande pour faire apparaître et disparaître mes menus
+function getStyle(a, b) {
+  return window.getComputedStyle(b, null)[a];
+}
+function logoRotate180(a) {
+  a.classList.toggle("reverse");
+}
+
+// Ouverture et Fermeture de mes MENU de Naviguation
 buttonSlideLeft.addEventListener("click", () => {
-  menuLeft.classList.toggle("translateRight");
+  if (getStyle("left", menuLeft) === "-310px") {
+    menuLeft.style.left = "0px";
+    logoRotate180(buttonSlideLeft);
+  } else {
+    menuLeft.style.left = "-310px";
+    logoRotate180(buttonSlideLeft);
+  }
 });
-
-buttonSlideRight.addEventListener("click", () => {
-  menuRight.classList.toggle("translateLeft");
-  buttonSlideRight.classList.toggle("reverse");
-});
-
 buttonSlideCenter.addEventListener("click", () => {
-  menuCenter.classList.toggle("translateDown");
-  buttonSlideCenter.classList.toggle("reverse");
+  if (getStyle("top", menuCenter) === "-160px") {
+    menuCenter.style.top = "48px";
+    logoRotate180(buttonSlideCenter);
+  } else {
+    menuCenter.style.top = "-160px";
+    logoRotate180(buttonSlideCenter);
+  }
+});
+buttonSlideRight.addEventListener("click", () => {
+  if (getStyle("right", menuRight) === "-64px") {
+    menuRight.style.right = "0px";
+    logoRotate180(buttonSlideRight);
+  } else {
+    menuRight.style.right = "-64px";
+    logoRotate180(buttonSlideRight);
+  }
 });

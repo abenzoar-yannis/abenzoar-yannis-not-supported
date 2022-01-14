@@ -107,7 +107,7 @@ body {
 }
 /* boite droite */
 .navBar__menuRight ul {
-  right: -4rem;
+  right: -64px;
   min-width: 2rem;
   text-align: center;
   font-size: 2rem;
