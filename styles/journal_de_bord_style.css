@@ -86,6 +86,9 @@ body {
 .navBar__menuLeft li:active {
   color: #a33;
 }
+.navBar__menuLeft > ul i {
+  padding: 0.5rem;
+}
 /* boite central */
 .navBar__menuCenter ul {
   top: -10rem;
