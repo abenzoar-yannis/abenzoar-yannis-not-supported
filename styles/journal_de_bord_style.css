@@ -66,9 +66,8 @@ body {
 }
 /* boite gauche */
 .navBar__menuLeft ul {
-  left: -310px;
-  min-width: 250px;
-  max-width: 300px;
+  left: -350px;
+  width: 350px;
   min-height: 100vh;
   padding-top: 3rem;
   transition: 0.3s;
@@ -222,7 +221,7 @@ article a:hover {
   }
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1360px) {
   .navBar__menuLeft > ul {
     left: 0px;
   }

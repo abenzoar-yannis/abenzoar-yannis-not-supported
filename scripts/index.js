@@ -15,11 +15,11 @@ function logoRotate180(a) {
 
 // Ouverture et Fermeture de mes MENU de Naviguation
 buttonSlideLeft.addEventListener("click", () => {
-  if (getStyle("left", menuLeft) === "-310px") {
+  if (getStyle("left", menuLeft) === "-350px") {
     menuLeft.style.left = "0px";
     logoRotate180(buttonSlideLeft);
   } else {
-    menuLeft.style.left = "-310px";
+    menuLeft.style.left = "-350px";
     logoRotate180(buttonSlideLeft);
   }
 });
