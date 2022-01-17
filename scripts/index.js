@@ -41,3 +41,21 @@ buttonSlideRight.addEventListener("click", () => {
     logoRotate180(buttonSlideRight);
   }
 });
+// Par click au body et selon la taille du media
+document.body.addEventListener("click", () => {
+  if (getStyle("top", menuCenter) === "48px") {
+    menuCenter.style.top = "-160px";
+    logoRotate180(buttonSlideCenter);
+  }
+  if (window.frames.innerWidth < 1360 && getStyle("left", menuLeft) === "0px") {
+    menuLeft.style.left = "-350px";
+    logoRotate180(buttonSlideLeft);
+  }
+  if (
+    window.frames.innerWidth < 780 &&
+    getStyle("right", menuRight) === "0px"
+  ) {
+    menuRight.style.right = "-64px";
+    logoRotate180(buttonSlideRight);
+  }
+});
