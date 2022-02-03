@@ -1,3 +1,9 @@
+@import url(accueil_style.css);
+@import url(flex_style.css);
+@import url(skills_cards_style.css);
+@import url(profil_style.css);
+@import url(footer_style.css);
+
 * {
   margin: 0;
   padding: 0;
