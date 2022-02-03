@@ -1,0 +1,21 @@
+@import url(../styles/nav_barre.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: normal normal 1rem/1.3rem Times, serif;
+  color: #1a1a1a;
+  text-decoration: none;
+  list-style-type: none;
+}
+body {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.navBar * {
+  background: #fff3cb;
+  color: #1a1a1a;
+}
