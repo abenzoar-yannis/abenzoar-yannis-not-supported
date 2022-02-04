@@ -61,6 +61,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 header H1 {
   font: bold 3rem Times, serif;
@@ -144,5 +145,34 @@ main span {
 @media print {
   .navBar {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+  aside {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  aside div {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #competances > div {
+    flex-direction: column;
+  }
+  #competances > div div {
+    margin-bottom: 1rem;
   }
 }
