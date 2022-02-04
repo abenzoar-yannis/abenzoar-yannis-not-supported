@@ -13,6 +13,7 @@ body {
   width: 100%;
 }
 
+/*----------------------- Nav Bar --------------------------*/
 .navBar {
   position: fixed;
   z-index: 10;
@@ -23,7 +24,6 @@ body {
   align-items: center;
   background: #fff3cb;
 }
-
 .tabs {
   padding: 0.5rem 1rem;
 }
@@ -31,15 +31,12 @@ body {
   transform: scale(1.1);
   cursor: pointer;
 }
-.tabs:active {
-  color: #790000;
-  font-weight: bold;
+.tabs a:active {
+  text-shadow: 0 0 0.1rem #aa0000;
 }
-
 .navBar ul {
   display: flex;
 }
-
 .navBar__menuRight > ul i {
   font-size: 2rem;
   padding: 0.5rem;
