@@ -87,6 +87,17 @@ article a:hover {
   text-decoration: underline;
 }
 
+/* Fenêtre Twich pour la lecture vidéo */
+[id^="twitch-embed"] {
+  height: 360px;
+}
+
+[id^="twitch-embed"] iframe {
+  height: 100%;
+  width: 100%;
+}
+
+/* Media Queries */
 @media all and (min-width: 780px) {
   .navBar__menuRight > ul {
     right: 0px;

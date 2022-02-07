@@ -41,6 +41,7 @@ buttonSlideRight.addEventListener("click", () => {
     logoRotate180(buttonSlideRight);
   }
 });
+
 // Par click au body et selon la taille du media
 document.body.addEventListener("click", () => {
   if (getStyle("top", menuCenter) === "48px") {
