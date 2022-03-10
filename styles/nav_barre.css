@@ -54,10 +54,11 @@
 .navBar__menuLeft ul {
   left: -350px;
   width: 350px;
-  min-height: 100vh;
+  max-height: 80vh;
   padding-top: 3rem;
   box-shadow: 0 0px 0.2rem #733;
   transition: linear 0.3s;
+  overflow-y: scroll;
 }
 .navBar__menuLeft li {
   padding: 0 0.6rem;
